@@ -1,0 +1,138 @@
+$main-bg-color: #ffffff;
+$secondary-bg-color: #2f303a;
+$third-bg-color: #f5f4fa;
+$main-text-color: #757575;
+$secondary-text-color: #212121;
+$accent-color: #2196f3;
+$third-text-color: #000000;
+$main-font: 'Roboto', sans-serif;
+$border-color: #eeeeee;
+$social-icon-color: #afb1b8;
+
+// breakpoints
+
+$first-bp: 480px;
+$second-bp: 768px;
+$third-bp: 1200px;
+
+.header {
+  border-bottom: 1px solid $border-color;
+}
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding: 10px 15px;
+    position: relative;
+  }
+}
+
+/* логотип */
+.logo {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $third-text-color;
+  text-decoration: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+  }
+}
+.logo__accent {
+  color: $accent-color;
+}
+
+/* Навігація */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.nav,
+.menu-connect {
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+.menu-connect {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+}
+
+.main-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+.main-nav__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.active {
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    bottom: -1px;
+    border-radius: 2px;
+  }
+}
+.menu-connect__list:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+.menu-connect__link {
+  display: flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  align-items: center;
+}
+
+.menu-connect__icon {
+  display: inline-block;
+  align-self: center;
+  margin-right: 10px;
+  fill: $main-text-color;
+
+  .menu-connect__link:hover &,
+  .menu-connect__link:focus & {
+    fill: $accent-color;
+  }
+}

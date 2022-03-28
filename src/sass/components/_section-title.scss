@@ -1,0 +1,23 @@
+.main-section-title {
+  font-weight: bold;
+  font-size: 28px;
+  // font-size: 36px;
+  line-height: 1.18;
+  color: $secondary-text-color;
+  margin-bottom: 30px;
+  // margin-bottom: 50px;
+  text-align: center;
+}
+.section-title {
+  font-weight: bold;
+  line-height: 1.14;
+  font-size: inherit;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-bottom: 10px;
+
+  @media screen and(max-width:$first-bp) {
+    display: flex;
+    justify-content: center;
+  }
+}

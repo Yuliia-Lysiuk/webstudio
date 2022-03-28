@@ -1,0 +1,20 @@
+.modal-button {
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $main-bg-color;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  padding: 10px 32px;
+
+  &:hover,
+  &:focus {
+    background-color: #188ae8;
+  }
+}

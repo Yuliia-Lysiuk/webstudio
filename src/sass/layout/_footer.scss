@@ -1,0 +1,177 @@
+.footer {
+  background-color: $secondary-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .logo {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.footer-contacts {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+.footer-contacts,
+.footer__social-conteiner {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100% / 2);
+  }
+}
+.footer-contacts__list,
+.footer__social-conteiner,
+.footer-conect {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // margin-bottom: 60px;
+  }
+}
+.footer__contact,
+.footer__adress {
+  font-style: normal;
+}
+.footer__contact {
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: $main-bg-color;
+  }
+}
+
+.logo__footer {
+  color: $main-bg-color;
+}
+.footer__adress {
+  color: $main-bg-color;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.conteiner-footer {
+  @media screen and (min-width: $second-bp) {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+.footer__text {
+  color: $main-bg-color;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__social-conteiner {
+  margin-bottom: 60px;
+  @media screen and (min-width: $third-bp) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+}
+.menu-social-networks_theme_dark {
+  display: flex;
+  padding: 0;
+
+  & .menu-social-networks__icon {
+    fill: $main-bg-color;
+  }
+  & .menu-social-networks__link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.footer-conect {
+  @media screen and (min-width: $third-bp) {
+    margin-left: 93px;
+  }
+}
+.footer-conect__input {
+  background-color: $secondary-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  outline: none;
+  color: $main-bg-color;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 450px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $third-bp) {
+    margin-right: 12px;
+  }
+
+  height: 50px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $third-bp) {
+    width: 358px;
+  }
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-conect__btn {
+  position: relative;
+  background-color: $accent-color;
+  color: $main-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 62px 10px 29px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  border: none;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 29px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/icon/icon-send.svg);
+    fill: $main-bg-color;
+  }
+}

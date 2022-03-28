@@ -1,0 +1,48 @@
+/* Модальне вікно */
+.modal {
+  width: 100%;
+  height: 609px;
+  position: relative;
+
+  background-color: $main-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  padding: 40px;
+  @media screen and (min-width: $first-bp) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+}
+.box-button {
+  display: flex;
+  justify-content: center;
+}
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-bg-color);
+  padding: 6px;
+  display: flex;
+}
+.button-close:hover {
+  cursor: pointer;
+}
+.button-close__icon {
+  fill: $third-text-color;
+
+  .button-close:hover &,
+  .button-close:focus & {
+    fill: $accent-color;
+  }
+}

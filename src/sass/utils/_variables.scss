@@ -1,0 +1,29 @@
+// :root {
+//   --main-bg-color: #ffffff;
+//   --secondary-bg-color: #2f303a;
+//   --third-bg-color: #f5f4fa;
+//   --main-text-color: #757575;
+//   --secondary-text-color: #212121;
+//   --accent-color: #2196f3;
+//   --third-text-color: #000000;
+//   --main-font: "Roboto", sans-serif;
+//   --border-color: #eeeeee;
+//   --social-icon-color: #afb1b8;
+// }
+
+$main-bg-color: #ffffff;
+$secondary-bg-color: #2f303a;
+$third-bg-color: #f5f4fa;
+$main-text-color: #757575;
+$secondary-text-color: #212121;
+$accent-color: #2196f3;
+$third-text-color: #000000;
+$main-font: "Roboto", sans-serif;
+$border-color: #eeeeee;
+$social-icon-color: #afb1b8;
+
+// breakpoints
+
+$first-bp: 480px;
+$second-bp: 768px;
+$third-bp: 1200px;

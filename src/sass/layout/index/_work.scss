@@ -1,0 +1,30 @@
+// Work
+.work {
+  padding-top: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.work__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__item {
+  position: relative;
+}
+.work__thumb {
+  position: absolute;
+  display: flex;
+  padding: 27px 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.section-title_theme_dark {
+  color: $main-bg-color;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
