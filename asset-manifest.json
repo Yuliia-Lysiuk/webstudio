@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/webstudio/static/css/main.6290ef5a.css",
+    "main.js": "/webstudio/static/js/main.e7119357.js",
+    "static/js/787.a6d51bb8.chunk.js": "/webstudio/static/js/787.a6d51bb8.chunk.js",
+    "static/media/header-img-desktop@2x.jpg": "/webstudio/static/media/header-img-desktop@2x.c81e5e0219ae32e7b56e.jpg",
+    "static/media/header-img-desktop.jpg": "/webstudio/static/media/header-img-desktop.f2dbc58f307763f4d4bb.jpg",
+    "static/media/header-img-tablet@2x.jpg": "/webstudio/static/media/header-img-tablet@2x.4f582bca0f8c87a67d9d.jpg",
+    "static/media/header-img-mobile@2x.jpg": "/webstudio/static/media/header-img-mobile@2x.5f912bedf1152491c172.jpg",
+    "static/media/header-img-tablet.jpg": "/webstudio/static/media/header-img-tablet.d0ca063d2cf6c856b3ae.jpg",
+    "static/media/header-img-mobile.jpg": "/webstudio/static/media/header-img-mobile.5954f60342ec61962155.jpg",
+    "index.html": "/webstudio/index.html",
+    "static/media/icon-check.svg": "/webstudio/static/media/icon-check.414ff5f0278cee5e82eb.svg",
+    "main.6290ef5a.css.map": "/webstudio/static/css/main.6290ef5a.css.map",
+    "main.e7119357.js.map": "/webstudio/static/js/main.e7119357.js.map",
+    "787.a6d51bb8.chunk.js.map": "/webstudio/static/js/787.a6d51bb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6290ef5a.css",
+    "static/js/main.e7119357.js"
+  ]
+}
